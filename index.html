@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <center>
+            <label for="">Columns </label>
+            <input id="colNumber" type="number">
+
+            <label for="">Rows</label>
+            <input id="rowNumber" type="number">
+
+            <label for="">Operator</label>
+            <select name="" id="selectOperator">
+               <option value="+">ADD</option>
+               <option value="-">SUBTRACT</option>
+               <option value="*">MULTIPLY</option>
+               <option id="division" value="/">DIVIDE</option>
+           </select>
+            <button id="makeTable" onclick="displayAll()">Do the heavy lifting</button>
+
+        </center>
+    </div>
+    <div class="container">
+        <table id="dispTable" class="table mt-3">
+            <table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
