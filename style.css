@@ -1,0 +1,36 @@
+body {
+    background: url("mountain-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+select {
+    outline: none;
+    border: 1px solid grey;
+}
+
+table {
+    background-color: #78968A;
+    color: white;
+    font-size: 2.2vmin;
+}
+
+.mybtn {
+    background-color: #78968A;
+    color: antiquewhite;
+}
+
+.mybtn:hover {
+    background-color: #4E5E53 !important;
+    color: antiquewhite !important;
+}
