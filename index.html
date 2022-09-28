@@ -5,31 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluation Table</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid">
+    <style>
+        input {
+            outline: none;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+        
+        select {
+            outline: none;
+            border: 1px solid grey;
+        }
+    </style>
+    <div class="container-fluid p-3 m-auto">
         <center>
-            <label for="">Columns </label>
-            <input id="colNumber" type="number">
+            <div class="container row">
+                <div class="col-lg-3  col-md-4 col-sm-6 m-2">
+                    <input id="colNumber" type="number" placeholder="Columns"></div>
 
-            <label for="">Rows</label>
-            <input id="rowNumber" type="number">
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2">
+                    <input id="rowNumber" type="number" placeholder="Rows"></div>
 
-            <label for="">Operator</label>
-            <select name="" id="selectOperator">
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2">
+                    <select name="" id="selectOperator" class="rounded p-2">
                <option value="+">ADD</option>
                <option value="-">SUBTRACT</option>
                <option value="*">MULTIPLY</option>
-               <option id="division" value="/">DIVIDE</option>
-           </select>
-            <button id="makeTable" onclick="displayAll()">Do the heavy lifting</button>
-
+               <option id="division" value="/">DIVIDE</option> </select></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2"><button id="makeTable" class="btn btn-lg btn-primary">Do the heavy lifting</button></div>
+            </div>
         </center>
     </div>
     <div class="container">
-        <table id="dispTable" class="table mt-3">
+        <table id="dispTable" class="table mt-3 table-striped">
             <table>
     </div>
 
